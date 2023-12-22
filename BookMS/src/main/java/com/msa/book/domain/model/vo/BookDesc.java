@@ -17,4 +17,19 @@ public class BookDesc {
     private LocalDate publicationDate;
     private Source source;
 
+    public static BookDesc createBookDesc(String author,
+                                          String isbn,
+                                          String description,
+                                          LocalDate publicationDate,
+                                          Source source) {
+        return new BookDesc(description, author, isbn, publicationDate, source);
+    }
+
+    public static BookDesc sample() {
+        return createBookDesc("마틴파울러",
+                "12312312",
+                "엔터프라이즈 아키텍처 패턴을 잘 설명해주는 도서",
+                LocalDate.now(),
+                Source.SUPPLY);
+    }
 }
