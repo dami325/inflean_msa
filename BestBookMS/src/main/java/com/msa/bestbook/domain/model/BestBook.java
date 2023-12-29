@@ -3,15 +3,19 @@ package com.msa.bestbook.domain.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 import java.util.UUID;
 
+@Document
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class BestBook {
 
+    @Id
     private String id;
 
     private Item item;
