@@ -4,5 +4,5 @@ import com.msa.book.framework.web.dto.BookOutPutDTO;
 
 public interface MakeUnAvailableUsecase {
 
-    public BookOutPutDTO unavailable(long bookNo);
+    public BookOutPutDTO unavailable(Long bookNo);
 }

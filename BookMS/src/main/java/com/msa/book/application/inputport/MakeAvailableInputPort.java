@@ -18,7 +18,8 @@ public class MakeAvailableInputPort implements MakeAvailableUsecase {
     @Override
     public BookOutPutDTO available(Long bookNo) {
         Book loadBook = bookOutPutPort.loadBook(bookNo);
-        loadBook.makeUnAvailable();
+//        loadBook.makeUnAvailable();
+        loadBook.makeAvailable();
         return BookOutPutDTO.mapToDTO(loadBook);
     }
 }

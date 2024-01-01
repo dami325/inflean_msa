@@ -38,3 +38,10 @@ server:
 logging:
   level:
     org.hibernate.SQL: debug
+consumer:
+  topic1:
+    name: rental_rent
+  topic2:
+    name: rental_return
+  groupid:
+    name: book
