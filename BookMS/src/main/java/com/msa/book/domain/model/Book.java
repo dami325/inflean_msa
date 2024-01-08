@@ -24,16 +24,10 @@ public class Book {
     private BookStatus bookStatus;
     private Location location;
 
-    public static Book enterBook(String title,
-                                 String author,
-                                 String isbn,
-                                 String description,
-                                 LocalDate publicationDate,
-                                 Source source,
-                                 Classfication classfication,
+    public static Book enterBook(String title, String author, String isbn, String description,
+                                 LocalDate publicationDate, Source source, Classfication classfication,
                                  Location location) {
-        BookDesc bookDesc = BookDesc.createBookDesc(
-                author, isbn, description, publicationDate, source);
+        BookDesc bookDesc = BookDesc.createBookDesc(author, isbn, description, publicationDate, source);
 
         Book book = new Book();
         book.setTitle(title);

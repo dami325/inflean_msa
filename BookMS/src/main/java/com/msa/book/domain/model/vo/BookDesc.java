@@ -13,11 +13,11 @@ import java.time.LocalDate;
 @Embeddable
 public class BookDesc {
 
-    private String description;
-    private String author;
-    private String isbn;
-    private LocalDate publicationDate;
-    private Source source;
+    private String description; // 설명
+    private String author; // 저자
+    private String isbn; // 출판번호
+    private LocalDate publicationDate; // 발행일
+    private Source source; // 도서 출처
 
     public static BookDesc createBookDesc(String author,
                                           String isbn,
